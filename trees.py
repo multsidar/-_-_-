@@ -70,7 +70,7 @@ print(f'test: {round(dt.score(x_test, y_test) * 100, 2)}%')
 
 dt = DecisionTreeClassifier(random_state=42, max_depth=5, min_samples_split=20, min_samples_leaf=5)
 dt.fit(x_train, y_train)
-#dt를 훈련
+
 print(dt.score(x_train, y_train), dt.score(x_test, y_test))
 print(f'train: {round(dt.score(x_train, y_train) * 100, 2)}%')
 print(f'test: {round(dt.score(x_test, y_test) * 100, 2)}%')
@@ -94,7 +94,7 @@ print(f'test: {round(np.mean(scores[r"test_score"]) * 100, 2)}%')
 
 dt = DecisionTreeClassifier(max_depth=3, random_state=42)
 dt.fit(x_train,y_train)
-#dt를 훈련
+
 print(dt.score(x_train,y_train),dt.score(x_test, y_test))
 print(f'train: {round(dt.score(x_train,y_train) * 100, 2)}%')
 print(f'test: {round(dt.score(x_test, y_test) * 100, 2)}%')
